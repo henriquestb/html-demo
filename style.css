@@ -10,7 +10,7 @@ h1,h2 {
 }
 
 h1 {
-  color: #3c415e;
+  color: #00ea69;
 }
 
 h2 {
@@ -30,7 +30,7 @@ a:hover {
 .card-white {
   background-color: white;
   padding: 24px;
-  margin:  24px auto;
+  margin:  20px auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   width: 500px;
   text-align: center;
@@ -57,6 +57,7 @@ a:hover {
 
 .list-inline {
   list-style: none;
+  padding: 0px;
 }
 
 .list-inline li {
@@ -67,4 +68,23 @@ a:hover {
   font-size: 32px
   color: rgb(2,2,2);
   margin: 8px 24px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card-white {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card-white {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card-white {
+    width: 300px;
+  }
 }
